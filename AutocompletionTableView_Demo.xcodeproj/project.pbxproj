@@ -15,7 +15,7 @@
 		AE081A39150E978600FCE491 /* ACDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE081A38150E978600FCE491 /* ACDAppDelegate.m */; };
 		AE081A3C150E978600FCE491 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE081A3A150E978600FCE491 /* MainStoryboard.storyboard */; };
 		AE081A3F150E978600FCE491 /* ACDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE081A3E150E978600FCE491 /* ACDViewController.m */; };
-		AE081A47150E97BE00FCE491 /* AutocompletionTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE081A46150E97BE00FCE491 /* AutocompletionTableView.m */; };
+		AE081A4F150EA46500FCE491 /* AutocompletionTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE081A4E150EA46500FCE491 /* AutocompletionTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		AE081A3B150E978600FCE491 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AE081A3D150E978600FCE491 /* ACDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACDViewController.h; sourceTree = "<group>"; };
 		AE081A3E150E978600FCE491 /* ACDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACDViewController.m; sourceTree = "<group>"; };
-		AE081A45150E97BE00FCE491 /* AutocompletionTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutocompletionTableView.h; sourceTree = "<group>"; };
-		AE081A46150E97BE00FCE491 /* AutocompletionTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutocompletionTableView.m; sourceTree = "<group>"; };
+		AE081A4E150EA46500FCE491 /* AutocompletionTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AutocompletionTableView.m; path = ../Classes/AutocompletionTableView.m; sourceTree = "<group>"; };
+		AE081A50150EA4B400FCE491 /* AutocompletionTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutocompletionTableView.h; path = Classes/AutocompletionTableView.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +105,8 @@
 		AE081A48150E97C300FCE491 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AE081A45150E97BE00FCE491 /* AutocompletionTableView.h */,
-				AE081A46150E97BE00FCE491 /* AutocompletionTableView.m */,
+				AE081A50150EA4B400FCE491 /* AutocompletionTableView.h */,
+				AE081A4E150EA46500FCE491 /* AutocompletionTableView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -175,10 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE081A4F150EA46500FCE491 /* AutocompletionTableView.m in Sources */,
 				AE081A35150E978600FCE491 /* main.m in Sources */,
 				AE081A39150E978600FCE491 /* ACDAppDelegate.m in Sources */,
 				AE081A3F150E978600FCE491 /* ACDViewController.m in Sources */,
-				AE081A47150E97BE00FCE491 /* AutocompletionTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +290,7 @@
 				AE081A44150E978600FCE491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

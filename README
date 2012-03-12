@@ -1,0 +1,9 @@
+AutocompletionTableView
+
+It's a very simple UITableView subclass which let's you to add real-time suggestion list for UITextView based on the custom dictionary.
+
+Step 1: init an instance of AutocompletionTableView with "initWithTextField:inViewController:withOptions:".
+Step 2: set its dictionary of suggestion strings
+Step 3: set it as the delegate for your UITextField
+Step 4: Enjoy! ;)
+Step 5: let me know what do you think at github.com/keyf

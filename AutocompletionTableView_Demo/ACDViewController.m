@@ -12,12 +12,14 @@
 @interface ACDViewController ()
 @property (nonatomic, strong) AutocompletionTableView *autoCompleter;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UILabel *sampleLabel;
 
 @end
 
 @implementation ACDViewController
 
 @synthesize textField = _textField;
+@synthesize sampleLabel = _sampleLabel;
 @synthesize autoCompleter = _autoCompleter;
 
 - (AutocompletionTableView *)autoCompleter
@@ -25,7 +27,7 @@
     if (!_autoCompleter)
     {
         NSMutableDictionary *options = [NSMutableDictionary dictionaryWithCapacity:2];
-        [options setValue:[NSNumber numberWithBool:NO] forKey:ACOCaseSensitive];
+        [options setValue:[NSNumber numberWithBool:YES] forKey:ACOCaseSensitive];
         [options setValue:nil forKey:ACOUseSourceFont];
         
         _autoCompleter = [[AutocompletionTableView alloc] initWithTextField:self.textField inViewController:self withOptions:options];
@@ -47,4 +49,17 @@
     self.autoCompleter.options = options;
 }
 
+- (IBAction)fontSwitchChanged:(UISwitch *)sender 
+{
+    NSMutableDictionary *options = [self.autoCompleter.options mutableCopy];
+    UIFont *cellLabelFont = (sender.on) ? nil : self.sampleLabel.font;
+    [options setValue:cellLabelFont forKey:ACOUseSourceFont];
+    self.autoCompleter.options = options;
+}
+
+- (void)viewDidUnload {
+    [self setSampleLabel:nil];
+    [self setSampleLabel:nil];
+    [super viewDidUnload];
+}
 @end

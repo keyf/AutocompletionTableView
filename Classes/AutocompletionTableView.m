@@ -39,8 +39,11 @@
     self.delegate = self;
     self.dataSource = self;
     self.scrollEnabled = YES;
+    
     // set "value changed" event handler for TextField
     [textField addTarget:self action:@selector(textFieldValueChanged:) forControlEvents:UIControlEventEditingChanged];
+    // turn off standard correction
+    textField.autocorrectionType = UITextAutocorrectionTypeNo;
     
     // to get rid of "extra empty cell" on the bottom
     // when there's only one cell in the table
