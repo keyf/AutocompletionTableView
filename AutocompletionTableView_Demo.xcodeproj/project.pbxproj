@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE081A29150E978600FCE491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE081A28150E978600FCE491 /* UIKit.framework */; };
+		AE081A2B150E978600FCE491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE081A2A150E978600FCE491 /* Foundation.framework */; };
+		AE081A2D150E978600FCE491 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE081A2C150E978600FCE491 /* CoreGraphics.framework */; };
+		AE081A33150E978600FCE491 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE081A31150E978600FCE491 /* InfoPlist.strings */; };
+		AE081A35150E978600FCE491 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE081A34150E978600FCE491 /* main.m */; };
+		AE081A39150E978600FCE491 /* ACDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE081A38150E978600FCE491 /* ACDAppDelegate.m */; };
+		AE081A3C150E978600FCE491 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE081A3A150E978600FCE491 /* MainStoryboard.storyboard */; };
+		AE081A3F150E978600FCE491 /* ACDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE081A3E150E978600FCE491 /* ACDViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE081A24150E978600FCE491 /* AutocompletionTableView_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutocompletionTableView_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE081A28150E978600FCE491 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE081A2A150E978600FCE491 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE081A2C150E978600FCE491 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE081A30150E978600FCE491 /* AutocompletionTableView_Demo-Info.plist */ = {isa = PBXFileReference; path = "AutocompletionTableView_Demo-Info.plist"; sourceTree = "<group>"; };
+		AE081A32150E978600FCE491 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE081A34150E978600FCE491 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE081A36150E978600FCE491 /* AutocompletionTableView_Demo-Prefix.pch */ = {isa = PBXFileReference; path = "AutocompletionTableView_Demo-Prefix.pch"; sourceTree = "<group>"; };
+		AE081A37150E978600FCE491 /* ACDAppDelegate.h */ = {isa = PBXFileReference; path = ACDAppDelegate.h; sourceTree = "<group>"; };
+		AE081A38150E978600FCE491 /* ACDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACDAppDelegate.m; sourceTree = "<group>"; };
+		AE081A3B150E978600FCE491 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AE081A3D150E978600FCE491 /* ACDViewController.h */ = {isa = PBXFileReference; path = ACDViewController.h; sourceTree = "<group>"; };
+		AE081A3E150E978600FCE491 /* ACDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACDViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE081A21150E978600FCE491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE081A29150E978600FCE491 /* UIKit.framework in Frameworks */,
+				AE081A2B150E978600FCE491 /* Foundation.framework in Frameworks */,
+				AE081A2D150E978600FCE491 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE081A19150E978600FCE491 = {
+			isa = PBXGroup;
+			children = (
+				AE081A2E150E978600FCE491 /* AutocompletionTableView_Demo */,
+				AE081A27150E978600FCE491 /* Frameworks */,
+				AE081A25150E978600FCE491 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE081A25150E978600FCE491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE081A24150E978600FCE491 /* AutocompletionTableView_Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE081A27150E978600FCE491 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE081A28150E978600FCE491 /* UIKit.framework */,
+				AE081A2A150E978600FCE491 /* Foundation.framework */,
+				AE081A2C150E978600FCE491 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE081A2E150E978600FCE491 /* AutocompletionTableView_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AE081A37150E978600FCE491 /* ACDAppDelegate.h */,
+				AE081A38150E978600FCE491 /* ACDAppDelegate.m */,
+				AE081A3A150E978600FCE491 /* MainStoryboard.storyboard */,
+				AE081A3D150E978600FCE491 /* ACDViewController.h */,
+				AE081A3E150E978600FCE491 /* ACDViewController.m */,
+				AE081A2F150E978600FCE491 /* Supporting Files */,
+			);
+			path = AutocompletionTableView_Demo;
+			sourceTree = "<group>";
+		};
+		AE081A2F150E978600FCE491 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE081A30150E978600FCE491 /* AutocompletionTableView_Demo-Info.plist */,
+				AE081A31150E978600FCE491 /* InfoPlist.strings */,
+				AE081A34150E978600FCE491 /* main.m */,
+				AE081A36150E978600FCE491 /* AutocompletionTableView_Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE081A23150E978600FCE491 /* AutocompletionTableView_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE081A42150E978600FCE491 /* Build configuration list for PBXNativeTarget "AutocompletionTableView_Demo" */;
+			buildPhases = (
+				AE081A20150E978600FCE491 /* Sources */,
+				AE081A21150E978600FCE491 /* Frameworks */,
+				AE081A22150E978600FCE491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutocompletionTableView_Demo;
+			productName = AutocompletionTableView_Demo;
+			productReference = AE081A24150E978600FCE491 /* AutocompletionTableView_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE081A1B150E978600FCE491 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ACD;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Arseniy Gushin";
+			};
+			buildConfigurationList = AE081A1E150E978600FCE491 /* Build configuration list for PBXProject "AutocompletionTableView_Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE081A19150E978600FCE491;
+			productRefGroup = AE081A25150E978600FCE491 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE081A23150E978600FCE491 /* AutocompletionTableView_Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE081A22150E978600FCE491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE081A33150E978600FCE491 /* InfoPlist.strings in Resources */,
+				AE081A3C150E978600FCE491 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE081A20150E978600FCE491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE081A35150E978600FCE491 /* main.m in Sources */,
+				AE081A39150E978600FCE491 /* ACDAppDelegate.m in Sources */,
+				AE081A3F150E978600FCE491 /* ACDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE081A31150E978600FCE491 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE081A32150E978600FCE491 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AE081A3A150E978600FCE491 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE081A3B150E978600FCE491 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE081A40150E978600FCE491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE081A41150E978600FCE491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE081A43150E978600FCE491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutocompletionTableView_Demo/AutocompletionTableView_Demo-Prefix.pch";
+				INFOPLIST_FILE = "AutocompletionTableView_Demo/AutocompletionTableView_Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE081A44150E978600FCE491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutocompletionTableView_Demo/AutocompletionTableView_Demo-Prefix.pch";
+				INFOPLIST_FILE = "AutocompletionTableView_Demo/AutocompletionTableView_Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE081A1E150E978600FCE491 /* Build configuration list for PBXProject "AutocompletionTableView_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE081A40150E978600FCE491 /* Debug */,
+				AE081A41150E978600FCE491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE081A42150E978600FCE491 /* Build configuration list for PBXNativeTarget "AutocompletionTableView_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE081A43150E978600FCE491 /* Debug */,
+				AE081A44150E978600FCE491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE081A1B150E978600FCE491 /* Project object */;
+}
