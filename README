@@ -4,7 +4,8 @@ It's a very simple UITableView subclass which let's you to add real-time suggest
 
 Step 1: init an instance of AutocompletionTableView with "initWithTextField:inViewController:withOptions:".
 Step 2: set its dictionary of suggestion strings
-Step 3: set it as the delegate for your UITextField
+Step 3: set it as the target for UIControlEventEditingChanged event for your UITextField:
+[YOUR_textField addTarget:YOUR_INSTANCE_of_AutocompletionTableView action:@selector(textFieldValueChanged:) forControlEvents:UIControlEventEditingChanged];
 Step 4: Enjoy! ;)
 Step 5: let me know what do you think at http://cocoacontrols.com/platforms/ios/controls/autocompletiontableview
 
