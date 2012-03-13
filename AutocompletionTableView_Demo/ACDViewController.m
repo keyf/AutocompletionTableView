@@ -40,7 +40,7 @@
 {
     [super viewDidLoad];
     // set "value changed" event handler for TextField
-    [self.textField addTarget:self action:@selector(textFieldValueChanged:) forControlEvents:UIControlEventEditingChanged];
+    [self.textField addTarget:self.autoCompleter action:@selector(textFieldValueChanged:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (IBAction)caseSwitchChanged:(UISwitch *)sender 
