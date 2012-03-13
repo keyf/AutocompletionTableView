@@ -40,8 +40,6 @@
     self.dataSource = self;
     self.scrollEnabled = YES;
     
-    // set "value changed" event handler for TextField
-    [textField addTarget:self action:@selector(textFieldValueChanged:) forControlEvents:UIControlEventEditingChanged];
     // turn off standard correction
     textField.autocorrectionType = UITextAutocorrectionTypeNo;
     

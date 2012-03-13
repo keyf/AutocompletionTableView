@@ -39,7 +39,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.textField.delegate = self.autoCompleter;
+    // set "value changed" event handler for TextField
+    [self.textField addTarget:self action:@selector(textFieldValueChanged:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (IBAction)caseSwitchChanged:(UISwitch *)sender 
