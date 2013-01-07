@@ -9,6 +9,10 @@
 
 // Consts for AutoCompleteOptions:
 //
+// if YES - Will avoid the auto-replacement of text when suggestion is clicked
+// if NO - The text will be replaced as usual with the clicked suggestion
+#define ACOAvoidAutoReplaceTextOnField @"ACOAvoidAutoReplaceTextOnField"
+
 // if YES - suggestions will be picked for display case-sensitive
 // if NO - case will be ignored
 #define ACOCaseSensitive @"ACOCaseSensitive"
