@@ -26,6 +26,8 @@
 // *** FOR FUTURE USE ***
 #define ACOShowSuggestionsOnTop @"ACOShowSuggestionsOnTop"
 
+@class AutocompletionTableView;
+
 /**
  @protocol Delegate methods for AutocompletionTableView
  */
@@ -37,13 +39,13 @@
  @param string the "to-search" term
  @return an array of suggestions built dynamically
  */
-- (NSArray*) suggestionsFor:(NSString*) string;
+- (NSArray*) autoCompletion:(AutocompletionTableView*) completer suggestionsFor:(NSString*) string;
 
 /**
  @method Invoked when user clicked an auto-complete suggestion UITableViewCell.
  @param index the index that was cicked
  */
-- (void) didSelectAutoCompleteSuggestionWithIndex:(NSInteger) index;
+- (void) autoCompletion:(AutocompletionTableView*) completer didSelectAutoCompleteSuggestionWithIndex:(NSInteger) index;
 
 @end
 

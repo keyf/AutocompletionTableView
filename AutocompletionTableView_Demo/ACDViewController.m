@@ -67,14 +67,14 @@
 
 #pragma mark - AutoCompleteTableViewDelegate
 
-- (NSArray*) suggestionsFor:(NSString*) string{
+- (NSArray*) autoCompletion:(AutocompletionTableView*) completer suggestionsFor:(NSString*) string{
     // with the prodided string, build a new array with suggestions - from DB, from a service, etc.
     return [NSArray arrayWithObjects:@"hostel",@"caret",@"carrot",@"house",@"horse", nil];
 }
 
-- (void) didSelectAutoCompleteSuggestionWithIndex:(NSInteger) index{
+- (void) autoCompletion:(AutocompletionTableView*) completer didSelectAutoCompleteSuggestionWithIndex:(NSInteger) index{
     // invoked when an available suggestion is selected
-    NSLog(@"Suggestion chosen: %d", index);
+    NSLog(@"%@ - Suggestion chosen: %d", completer, index);
 }
 
 @end
