@@ -26,10 +26,33 @@
 // *** FOR FUTURE USE ***
 #define ACOShowSuggestionsOnTop @"ACOShowSuggestionsOnTop"
 
+/**
+ @protocol Delegate methods for AutocompletionTableView
+ */
+@protocol AutocompletionTableViewDelegate <NSObject>
+
+@required
+/**
+ @method Ask delegate for the suggestions for the provided string - maybe need to ask DB, service, etc.
+ @param string the "to-search" term
+ @return an array of suggestions built dynamically
+ */
+- (NSArray*) suggestionsFor:(NSString*) string;
+
+/**
+ @method Invoked when user clicked an auto-complete suggestion UITableViewCell.
+ @param index the index that was cicked
+ */
+- (void) didSelectAutoCompleteSuggestionWithIndex:(NSInteger) index;
+
+@end
+
 @interface AutocompletionTableView : UITableView <UITableViewDataSource, UITableViewDelegate>
 // Dictionary of NSStrings of your auto-completion terms
 @property (nonatomic, strong) NSArray *suggestionsDictionary; 
 
+// Delegate for AutocompletionTableView
+@property (nonatomic, strong) id<AutocompletionTableViewDelegate> autoCompleteDelegate;
 // Dictionary of auto-completion options (check constants above)
 @property (nonatomic, strong) NSDictionary *options;
 

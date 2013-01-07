@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ACDViewController : UIViewController
+@protocol AutocompletionTableViewDelegate;
+
+@interface ACDViewController : UIViewController <AutocompletionTableViewDelegate>
 
 @end

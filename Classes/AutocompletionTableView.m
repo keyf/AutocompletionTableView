@@ -60,6 +60,10 @@
     NSMutableArray *tmpArray = [NSMutableArray array];
     NSRange range;
     
+    if (_autoCompleteDelegate && [_autoCompleteDelegate respondsToSelector:@selector(suggestionsFor:)]) {
+        self.suggestionsDictionary = [_autoCompleteDelegate suggestionsFor:subString];
+    }
+    
     for (NSString *tmpString in self.suggestionsDictionary)
     {
         range = ([[self.options valueForKey:ACOCaseSensitive] isEqualToNumber:[NSNumber numberWithInt:1]]) ? [tmpString rangeOfString:subString] : [tmpString rangeOfString:subString options:NSCaseInsensitiveSearch];
@@ -107,6 +111,10 @@
 {
     [self.textField setText:[self.suggestionOptions objectAtIndex:indexPath.row]];
     [self hideOptionsView];
+    
+    if (_autoCompleteDelegate && [_autoCompleteDelegate respondsToSelector:@selector(didSelectAutoCompleteSuggestionWithIndex:)]) {
+        [_autoCompleteDelegate didSelectAutoCompleteSuggestionWithIndex:indexPath.row];
+    }
 }
 
 #pragma mark - UITextField delegate

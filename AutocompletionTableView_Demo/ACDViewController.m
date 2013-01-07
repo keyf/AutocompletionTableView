@@ -31,6 +31,7 @@
         [options setValue:nil forKey:ACOUseSourceFont];
         
         _autoCompleter = [[AutocompletionTableView alloc] initWithTextField:self.textField inViewController:self withOptions:options];
+        _autoCompleter.autoCompleteDelegate = self;
         _autoCompleter.suggestionsDictionary = [NSArray arrayWithObjects:@"hostel",@"caret",@"carrot",@"house",@"horse", nil];
     }
     return _autoCompleter;
@@ -63,4 +64,17 @@
     [self setSampleLabel:nil];
     [super viewDidUnload];
 }
+
+#pragma mark - AutoCompleteTableViewDelegate
+
+- (NSArray*) suggestionsFor:(NSString*) string{
+    // with the prodided string, build a new array with suggestions - from DB, from a service, etc.
+    return [NSArray arrayWithObjects:@"hostel",@"caret",@"carrot",@"house",@"horse", nil];
+}
+
+- (void) didSelectAutoCompleteSuggestionWithIndex:(NSInteger) index{
+    // invoked when an available suggestion is selected
+    NSLog(@"Suggestion chosen: %d", index);
+}
+
 @end
