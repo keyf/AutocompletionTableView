@@ -109,7 +109,10 @@
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.textField setText:[self.suggestionOptions objectAtIndex:indexPath.row]];
+    if (![[self.options valueForKey:ACOAvoidAutoReplaceTextOnField] isEqualToNumber:[NSNumber numberWithInt:1]]) {
+        [self.textField setText:[self.suggestionOptions objectAtIndex:indexPath.row]];
+    }
+    
     [self hideOptionsView];
     
     if (_autoCompleteDelegate && [_autoCompleteDelegate respondsToSelector:@selector(autoCompletion:didSelectAutoCompleteSuggestionWithIndex:)]) {
