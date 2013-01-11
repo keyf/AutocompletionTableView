@@ -110,11 +110,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.textField setText:[self.suggestionOptions objectAtIndex:indexPath.row]];
-    [self hideOptionsView];
     
     if (_autoCompleteDelegate && [_autoCompleteDelegate respondsToSelector:@selector(didSelectAutoCompleteSuggestionWithIndex:)]) {
         [_autoCompleteDelegate didSelectAutoCompleteSuggestionWithIndex:indexPath.row];
     }
+    
+    [self hideOptionsView];
 }
 
 #pragma mark - UITextField delegate
